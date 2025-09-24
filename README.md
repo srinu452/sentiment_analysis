@@ -48,7 +48,7 @@ mini-sentiment-app/
 
 ## 🚀 Quickstart (Local)
 
-```bash
+
 # 1) create venv
 python -m venv .venv
 # Windows
@@ -109,4 +109,5 @@ Dashboard (empty)
 
 Dashboard (result: Positive)
 <br>
-<img src="docs/screenshots/dashboard_result_positive.png" alt="Positive result" width="640">
+<img width="1907" height="728" alt="s1" src="https://github.com/user-attachments/assets/c76ad083-bcb5-4876-a6fb-536141ea0802" />
+" alt="Positive result" width="640">
