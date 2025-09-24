@@ -1,0 +1,12 @@
+Flask==3.0.0
+python-dotenv==1.0.1
+Werkzeug==3.0.3
+Jinja2==3.1.4
+itsdangerous==2.2.0
+
+# ML bits
+transformers==4.44.2
+torch==2.4.0     # or torch==2.4.0+cpu from pip if no CUDA
+numpy==1.26.4
+
+# DB helpers (sqlite is stdlib; no extra needed)
