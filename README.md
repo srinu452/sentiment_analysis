@@ -109,5 +109,6 @@ Dashboard (empty)
 
 Dashboard (result: Positive)
 <br>
-<img width="1907" height="728" alt="s1" src="https://github.com/user-attachments/assets/c76ad083-bcb5-4876-a6fb-536141ea0802" />
+<img width="1300" height="433" alt="image" src="https://github.com/user-attachments/assets/525782dd-4e1c-4b93-9641-517dca60fa63" />
+
 " alt="Positive result" width="640">
