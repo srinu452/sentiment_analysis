@@ -97,7 +97,7 @@ def get_classifier():
 
 Login
 <br>
-<img src="docs/screenshots/login.png" alt="Login" width="420">
+<img src="s1.png" alt="Login" width="420">
 
 Register
 <br>
