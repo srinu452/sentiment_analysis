@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="grid">
+  <div class="card tall" style="max-width:560px; margin:0 auto;">
+    <h2>Create account</h2>
+    <form method="post">
+      <label>Email</label>
+      <input type="email" name="email" value="{{ email or '' }}" required>
+      <label>Password</label>
+      <input type="password" name="password" required>
+      <label>Confirm password</label>
+      <input type="password" name="confirm" required>
+      <div class="row">
+        <button type="submit">Register</button>
+        <a class="btn link" href="{{ url_for('login') }}">I already have an account</a>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

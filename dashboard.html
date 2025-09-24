@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="grid grid-2">
+  <div class="card tall">
+    <h2>Sentiment Dashboard</h2>
+    <form method="post">
+      <label>Enter text to analyze</label>
+      <textarea name="text" rows="5" placeholder="Type something meaningful...">{{ text or '' }}</textarea>
+      <div class="row">
+        <button type="submit">Analyze</button>
+        <span class="muted small">The first run may take a few seconds to load the model.</span>
+      </div>
+    </form>
+  </div>
+
+  <div class="card tall">
+    <h3>Result</h3>
+    {% if result %}
+      {% set lbl = result.label|lower %}
+      {% if lbl == 'positive' %}
+        {% set badge_class = 'pos' %}
+      {% elif lbl == 'negative' %}
+        {% set badge_class = 'neg' %}
+      {% else %}
+        {% set badge_class = 'neu' %}
+      {% endif %}
+
+      <p><span class="badge {{ badge_class }}">{{ result.label }}</span></p>
+      <p class="small muted">Confidence: {{ '%.4f'|format(result.score) }}</p>
+    {% else %}
+      <p class="muted small">Enter some text and press <strong>Analyze</strong> to see the prediction.</p>
+    {% endif %}
+  </div>
+</div>
+{% endblock %}
